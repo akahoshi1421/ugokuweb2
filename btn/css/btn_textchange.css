@@ -1,0 +1,39 @@
+.textchange{
+    position: relative;
+    border: 1px solid #555;
+    border-radius: 25px;
+    min-width: 210px;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.textchange:hover{
+    background: #333;
+    color: #fff;
+}
+
+.textchange span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    display: block;
+    white-space: nowrap;
+}
+
+.textchange span:nth-child(2){
+    opacity: 0;
+}
+
+.textchange:hover span:nth-child(1){
+    opacity: 0;
+}
+
+.textchange:hover span:nth-child(2){
+    opacity: 1;
+}

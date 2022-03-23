@@ -1,0 +1,74 @@
+.btn05{
+    position: relative;
+    display: inline-block;
+    color: #333;
+    padding: 10px 20px;
+    background: #eee;
+    text-decoration: none;
+    outline: none;
+    transition: all 0.3s;
+    transition-delay: 0.7s;
+}
+
+.btn05:hover{
+    background: #333;
+    color: #fff;
+}
+
+.btn05 span{
+    display: block;
+}
+
+.btn05::before,
+.btn05::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #333;
+    transition: all 0.2s linear;
+}
+
+.btn05 span::before,
+.btn05 span::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 0;
+    background: #333;
+    transition: all 0.2s linear;
+}
+
+.btn05:hover::before,
+.btn05:hover::after{
+    width: 100%;
+}
+
+.btn05:hover span::before,
+.btn05:hover span::after{
+    height: 100%;
+}
+
+.bordercircle3::after{
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+}
+
+.bordercircle3 span::after{
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+}
+
+.bordercircle3::before{
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+}
+
+.bordercircle3 span::before{
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+}

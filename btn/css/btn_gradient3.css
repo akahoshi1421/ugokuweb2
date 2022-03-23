@@ -1,0 +1,16 @@
+.gradient3{
+    display: inline-block;
+    color: #fff;
+    padding: 18px 60px;
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+    background: linear-gradient(to right, #52A0FD 0%, #00e2fa 80%, #00e2fa 100%);
+    
+    transition: all 0.3s ease-out;
+}
+
+.gradient3:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 15px rgba(82, 160, 253, 0.4);
+}

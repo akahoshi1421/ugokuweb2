@@ -1,0 +1,15 @@
+.changeradius{
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: 5px double white;
+    text-decoration: none;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+
+.changeradius:hover{
+    background: #666;
+    border-radius: 20px;
+}

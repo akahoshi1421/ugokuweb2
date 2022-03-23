@@ -1,0 +1,37 @@
+.linestretches2{
+    position: relative;
+    color: #333;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+}
+
+.linestretches2::before,
+.linestretches2::after{
+    content: "";
+    position: absolute;
+    border: solid #333;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.linestretches2::before{
+    top: 0;
+    left: 0;
+    border-width: 2px 0 0 2px;
+}
+
+.linestretches2::after{
+    bottom: 0;
+    right: 0;
+    border-width: 0 2px 2px 0;
+}
+
+.linestretches2:hover::before,
+.linestretches2:hover::after{
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-color: #666;
+}

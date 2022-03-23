@@ -1,0 +1,47 @@
+.arrow5{
+    position: relative;
+    border: 1px solid #555;
+    padding: 8px 30px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #333;
+    transition: all 0.2s linear;
+}
+
+.arrow5:hover{
+    background: #333;
+    color: #fff;
+}
+
+.arrow5::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -26px;
+    width: 40px;
+    height: 1px;
+    background: #333;
+    transition: all 0.2s linear;
+}
+
+.arrow5::after{
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: -21px;
+    width: 1px;
+    height: 12px;
+    background: #333;
+    transform: skewX(45deg);
+    transition: all 0.2s linear;
+}
+
+.arrow5:hover::before{
+    right: -30px;
+}
+
+.arrow5:hover::after{
+    right: -25px;
+}

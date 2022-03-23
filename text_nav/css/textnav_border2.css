@@ -1,0 +1,78 @@
+.gnavi{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.gnavi a{
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+.gnavi li{
+    position: relative;
+    margin: 0 10px;
+}
+
+.gnavi li::before,
+.gnavi li::after{
+    content: "";
+    position: absolute;
+    background: #0481A2;
+    width: 0;
+    height: 2px;
+    transition: all 0.2s linear;
+    transition-delay: 0.2s;
+}
+
+.gnavi li::before{
+    right: 0;
+    bottom: 0;
+}
+
+.gnavi li::after{
+    left: 0;
+    top: 0;
+}
+
+.gnavi li span{
+    display: block;
+}
+
+.gnavi li span::before,
+.gnavi li span::after{
+    content: "";
+    position: absolute;
+    background: #0481A2;
+    width: 2px;
+    height: 0;
+    transition: all 0.1s linear;
+}
+
+.gnavi li span::before{
+    left: 0;
+    bottom: 0;
+}
+
+.gnavi li span::after{
+    right: 0;
+    top: 0;
+}
+
+.gnavi li.current::before,
+.gnavi li.current::after,
+.gnavi li:hover::before,
+.gnavi li:hover::after{
+    width: 100%;
+}
+
+.gnavi li.current span::before,
+.gnavi li.current span::after,
+.gnavi li:hover span::before,
+.gnavi li:hover span::after{
+    height: 100%;
+}

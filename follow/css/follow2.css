@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #666;
+    padding: 10px;
+}
+
+section{
+    padding: 300px 0;
+}
+
+#header.UpMove{
+    position: fixed;
+    width: 100%;
+    animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+#header.DownMove{
+    position: fixed;
+    width: 100%;
+    animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

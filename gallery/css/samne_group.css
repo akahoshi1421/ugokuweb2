@@ -1,0 +1,43 @@
+.gallery{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery li{
+    width: 33.333%;
+    margin: 0 10px;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.hide-area{
+    display: none;
+}
+
+.modaal-fullscreen .modaal-content-container{
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.modaal-fullscreen .modaal-close{
+    background: none;
+    right: 20px;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+    background: #666;
+}
+
+.caption{
+    display: block;
+    padding: 10px 0;
+}
