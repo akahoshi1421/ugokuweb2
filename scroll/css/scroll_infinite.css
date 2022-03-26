@@ -1,0 +1,9 @@
+#infscr-loading{
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#infscr-loading img{
+    width: 30px;
+}

@@ -1,0 +1,17 @@
+.scrollgress{
+    z-index: 3;
+    top: 70px !important;
+}
+
+#header{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background: #333;
+}
+
+#container{
+    height: 2000px;
+}
