@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../modaal.css">
+    <link rel="stylesheet" href="css/modaal.css">
+</head>
+<body>
+    <ul class="info-list">
+        <li><a href="#info-1" class="info">
+            <dl><dt>2021.5.12</dt><dd>お知らせのタイトル</dd></dl>
+        </a></li>
+    </ul>
+
+    <section id="info-1" class="hide-area">
+        <h2>お知らせ</h2>
+        <p>お知らせの内容が入る</p>
+    </section>
+
+    <p><a href="#login" class="confirm">確認画面モーダル</a></p>
+    <section id="login" class="hide-area"></section>
+
+    <ul class="gallery-list"><!--data-groupに同じ名前を入れるとグループ化されて表示-->
+        <li><a href="img/01.jpg" class="gallery" data-group="gallery"><img src="img/01.jpg" alt="" width="100"></a></li>
+        <li><a href="img/02.jpg" class="gallery" data-group="gallery"><img src="img/02.jpg" alt="" width="100"></a></li>
+        <li><a href="img/03.jpg" class="gallery" data-group="gallery"><img src="img/03.jpg" alt="" width="100"></a></li>
+    </ul>
+
+            <!--動画のモーダル-->
+			<p><a href="https://www.youtube.com/embed/Kq95zgCrxeY" class="video-open">→ videoを開く</a></p>
+            
+            <!--iframeのモーダル-->			
+                <p><a href="https://kubotaryoko.com" class="iframe-open">→ iframeで指定のリンク先を開く</a></p>
+            
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script src="../modaal.js"></script>
+    <script src="js/modaal.js"></script>
+</body>
+</html>

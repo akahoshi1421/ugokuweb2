@@ -1,0 +1,32 @@
+.slider a{
+    display: block;
+    background: #fff;
+    padding: 20px;
+}
+
+.slider span{
+    display: inline-block;
+    font-style: 0.8rem;
+    margin-right: 10px;
+    color: #777;
+}
+
+@media screen and (max-width: 768px) {
+    .slider{
+        padding: 20px;
+        background: #fff;
+    }
+
+    .slider li{
+        border-bottom: 1px dashed #ccc;
+    }
+
+    .slider li:last-child{
+        border-bottom: none;
+    }
+
+    .slider span{
+        display: block;
+        padding-bottom: 10px;
+    }
+}
